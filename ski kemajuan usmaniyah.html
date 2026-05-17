@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Interaktif: Kemajuan Daulah Turki Utsmani</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #047857;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-emerald-800 selection:text-emerald-100">
+
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-emerald-900/30 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-emerald-600 to-amber-500 p-2 rounded-lg shadow-lg">
+                    <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-sm font-semibold tracking-wider text-amber-400 uppercase">Bahan Belajar Cepat</h1>
+                    <p class="text-xs text-slate-400">Ujian Sejarah Daulah Turki Utsmani</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="scrollToSection('timeline')" class="text-xs bg-slate-900 hover:bg-slate-800 border border-slate-800 px-3 py-1.5 rounded-full transition">Kronologi</button>
+                <button onclick="scrollToSection('sultans')" class="text-xs bg-slate-900 hover:bg-slate-800 border border-slate-800 px-3 py-1.5 rounded-full transition">5 Tokoh Utama</button>
+                <button onclick="scrollToSection('military')" class="text-xs bg-slate-900 hover:bg-slate-800 border border-slate-800 px-3 py-1.5 rounded-full transition">Trisula Militer</button>
+                <button onclick="scrollToSection('quiz')" class="text-xs bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-slate-950 font-bold px-4 py-1.5 rounded-full transition shadow-md">Simulasi Kuis</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section class="relative overflow-hidden pt-12 pb-16 px-4 bg-gradient-to-b from-emerald-950/20 via-slate-950 to-slate-950">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(4,120,87,0.1),transparent_50%)]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-4">
+                ⏳ Durasi Berkuasa: 620+ Tahun (1299 - 1924 M)
+            </span>
+            <h2 class="serif-title text-4xl sm:text-6xl font-bold text-slate-100 tracking-tight leading-none mb-6">
+                Puncak Peradaban <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-amber-300 to-amber-500">Daulah Turki Utsmani</span>
+            </h2>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Dinasti Islam terpanjang dalam sejarah dunia. Menguasai 3 benua (Asia, Afrika, Eropa) dan bertransformasi dari sisa kehancuran Mongol hingga menjadi pemegang kepemimpinan tertinggi dunia Islam.
+            </p>
+
+            <!-- Quick Analogy Banner -->
+            <div class="mt-8 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 text-left max-w-2xl mx-auto flex gap-4 items-start">
+                <div class="bg-emerald-950 p-2.5 rounded-xl text-emerald-400 shrink-0">
+                    💡
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-emerald-400">Analogi Mempermudah Belajar:</h4>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed mt-1">
+                        Bayangkan Turki Utsmani seperti sebuah <strong>"Sistem Operasi Komputer Raksasa"</strong>. Ia sempat mengalami <em>crash</em> parah akibat serangan virus (bangsa Mongol), lalu di-<em>reboot</em> ulang dari nol, melakukan <em>upgrade</em> besar-besaran, hingga memegang kendali server utama dunia Islam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="max-w-6xl mx-auto px-4 pb-24 space-y-20">
+
+        <!-- 1. KRONOLOGI SEJARAH (TIMELINE) -->
+        <section id="timeline" class="scroll-mt-24">
+            <div class="flex flex-col items-center text-center mb-12">
+                <h3 class="serif-title text-3xl font-bold text-amber-400 mb-2">Alur Kronologis Dinasti</h3>
+                <p class="text-slate-400 max-w-lg text-sm">Pahami peta waktu perjalanan dinasti agar tidak tertukar saat menjawab urutan sejarah di soal ujian.</p>
+            </div>
+
+            <div class="relative border-l border-emerald-900/50 ml-4 md:ml-32 pl-8 space-y-12">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-amber-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-amber-400 font-bold">1</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-amber-400 block">1299 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Pendirian</span>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-slate-100 mb-1">Pondasi Awal oleh Usman I (Ertugrul)</h4>
+                        <p class="text-sm text-slate-300">
+                            Berdiri tepat 40 tahun setelah hancurnya Daulah Abbasiyah di Bagdad oleh serangan brutal Mongol. Bermula sebagai wilayah kecil di Asia Kecil hingga mandiri dan mendeklarasikan kekuasaan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-red-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-red-400 font-bold">2</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-red-400 block">1402 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Masa Suram</span>
+                    </div>
+                    <div class="bg-red-950/10 border border-red-900/30 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-red-400 mb-1">Interregnum & Gempuran Pasukan Timur Lenk (Mongol)</h4>
+                        <p class="text-sm text-slate-300">
+                            Serbuan pasukan Tartar membuat Daulah ini berada di ujung tanduk kehancuran. Ditambah lagi terjadi perebutan kekuasaan internal (perang saudara) di kalangan keluarga Utsmani sendiri.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-emerald-400 font-bold">3</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-emerald-400 block">1413 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Restorasi</span>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-emerald-400 mb-1">Kebangkitan Kedua oleh Muhammad I</h4>
+                        <p class="text-sm text-slate-300">
+                            Bagaikan melakukan <span class="text-emerald-400 font-semibold">System Restore</span> setelah crash parah. Sultan Muhammad I berhasil mendamaikan konflik internal keluarga dan menyatukan kembali wilayah yang lepas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-amber-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-amber-400 font-bold">4</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-amber-400 block">1453 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Penaklukan</span>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-amber-400 mb-1">Jatuhnya Konstantinopel di Tangan Muhammad Al-Fatih</h4>
+                        <p class="text-sm text-slate-300">
+                            Puncak pencapaian militer. Konstantinopel diubah namanya menjadi Islambul (Istanbul) dan menjadi ibukota resmi. Gereja megah Hagia Sophia dibeli secara pribadi dan diwakafkan menjadi Masjid.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-emerald-400 font-bold">5</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-emerald-400 block">1517 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Khilafah</span>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-emerald-400 mb-1">Penguasaan Dua Kota Suci (Haramain) oleh Salim I</h4>
+                        <p class="text-sm text-slate-300">
+                            Menaklukkan dinasti Mamluk di Mesir. Turki Utsmani kini memegang kunci kepemimpinan dunia Islam seluruhnya (Transisi kekhilafahan resmi ditandai penyerahan mantel & pedang Rasulullah).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 bg-slate-950 border-2 border-amber-500 w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-amber-400 font-bold">6</span>
+                    <div class="md:absolute md:-left-[160px] md:top-0 md:w-32 text-left md:text-right">
+                        <span class="text-lg font-bold text-amber-400 block">1520-1566 M</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block">Zaman Keemasan</span>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-md max-w-3xl">
+                        <h4 class="text-base font-semibold text-amber-400 mb-1">Puncak Kejayaan Bersama Sulaiman Al-Qanuni</h4>
+                        <p class="text-sm text-slate-300">
+                            Era di mana militer, seni, arsitektur, dan perundang-undangan mencapai batas tertingginya. Wilayah kekuasaan menjangkau 3 benua besar. Hukum "Kanun Utsmani" berlaku hingga 300 tahun ke depan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. LIMA SULTAN UTAMA (CAROUSEL / TABS INTERAKTIF) -->
+        <section id="sultans" class="scroll-mt-24">
+            <div class="flex flex-col items-center text-center mb-8">
+                <span class="text-xs text-emerald-400 tracking-wider font-semibold uppercase">Super-Sultan Turki</span>
+                <h3 class="serif-title text-3xl font-bold text-slate-100 mt-1">5 Tokoh Penentu Kejayaan</h3>
+                <p class="text-slate-400 max-w-lg text-sm mt-2">Sering keluar di soal esai maupun pilihan ganda! Klik setiap nama Sultan di bawah untuk membuka kartu pembelajarannya.</p>
+            </div>
+
+            <!-- Tabs Nav -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+                <button onclick="switchSultanTab('sultan1')" id="btn-sultan1" class="sultan-tab-btn px-4 py-2 text-xs font-semibold rounded-lg border border-emerald-900/30 bg-emerald-950 text-emerald-400 transition">
+                    1. Muhammad I
+                </button>
+                <button onclick="switchSultanTab('sultan2')" id="btn-sultan2" class="sultan-tab-btn px-4 py-2 text-xs font-semibold rounded-lg border border-slate-800 bg-slate-900 hover:bg-slate-800 text-slate-400 transition">
+                    2. Murad II
+                </button>
+                <button onclick="switchSultanTab('sultan3')" id="btn-sultan3" class="sultan-tab-btn px-4 py-2 text-xs font-semibold rounded-lg border border-slate-800 bg-slate-900 hover:bg-slate-800 text-slate-400 transition">
+                    3. M. Al-Fatih
+                </button>
+                <button onclick="switchSultanTab('sultan4')" id="btn-sultan4" class="sultan-tab-btn px-4 py-2 text-xs font-semibold rounded-lg border border-slate-800 bg-slate-900 hover:bg-slate-800 text-slate-400 transition">
+                    4. Salim I
+                </button>
+                <button onclick="switchSultanTab('sultan5')" id="btn-sultan5" class="sultan-tab-btn px-4 py-2 text-xs font-semibold rounded-lg border border-slate-800 bg-slate-900 hover:bg-slate-800 text-slate-400 transition">
+                    5. Sulaiman Al-Qanuni
+                </button>
+            </div>
+
+            <!-- Tabs Content Containers -->
+            <div class="relative bg-gradient-to-br from-slate-900 to-slate-900/50 border border-slate-800 p-6 sm:p-8 rounded-3xl min-h-[300px]">
+                
+                <!-- Sultan 1 -->
+                <div id="sultan1" class="sultan-content space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Sultan Ke-5 (Wafat 1421 M)</span>
+                            <h4 class="serif-title text-2xl font-bold text-slate-100">Sultan Muhammad I (Mehmed I)</h4>
+                        </div>
+                        <span class="inline-block bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold">
+                            "The Second Founder" (Pendiri Kedua)
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Muhammad I adalah putra bungsu Sultan Bayezid I. Ia naik takhta ketika kekaisaran hancur lebur usai invasi Mongol dan perang perebutan kekuasaan antar saudaranya sendiri.
+                            </p>
+                            <div class="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-xl">
+                                <span class="text-xs text-emerald-400 font-bold block">💡 Analogi Kunci:</span>
+                                <p class="text-xs text-slate-300">
+                                    Dia bertindak seperti teknisi sistem operasi yang melakukan <strong>defragmentasi & perbaikan registry</strong> setelah database hancur karena virus Mongol.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 bg-slate-950/40 p-4 rounded-2xl border border-slate-800">
+                            <span class="text-xs text-amber-400 font-bold uppercase">Prestasi Krusial (Bahan Ujian):</span>
+                            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+                                <li>Memulihkan keutuhan wilayah Utsmani melalui jalur diplomasi cerdas dengan Bizantium & Venesia.</li>
+                                <li>Memindahkan ibukota kembali dari Adrianopel ke bursa (kota para ahli fiqih/Fuqaha).</li>
+                                <li>Sangat mencintai ilmu pengetahuan dan ulama.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sultan 2 -->
+                <div id="sultan2" class="sultan-content space-y-6 hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Sultan Ke-6 (Wafat 1451 M)</span>
+                            <h4 class="serif-title text-2xl font-bold text-slate-100">Sultan Murad II</h4>
+                        </div>
+                        <span class="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs px-3 py-1 rounded-full font-semibold">
+                            "Arsitek Istana Akademis"
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Diangkat menjadi sultan di usia yang sangat muda (18 tahun). Ia memiliki latar belakang mumpuni karena sejak belia telah dididik ketat dan ditugaskan menjadi gubernur oleh ayahnya.
+                            </p>
+                            <div class="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-xl">
+                                <span class="text-xs text-emerald-400 font-bold block">💡 Analogi Kunci:</span>
+                                <p class="text-xs text-slate-300">
+                                    Seperti manajer tangguh yang berhasil merebut kembali <strong>aset-aset perusahaan</strong> yang sempat hilang diambil oleh kompetitor luar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 bg-slate-950/40 p-4 rounded-2xl border border-slate-800">
+                            <span class="text-xs text-amber-400 font-bold uppercase">Prestasi Krusial (Bahan Ujian):</span>
+                            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+                                <li>Merebut kembali daerah-daerah yang melepaskan diri (Asia Kecil, Solo Niki, Albania, Hungaria).</li>
+                                <li>Membangun suasana istana bernuansa akademis agar iklim sains terus berkembang.</li>
+                                <li>Rutin mengirim ribuan dinar dana kesejahteraan tahunan ke Mekah, Madinah, dan Yerusalem.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sultan 3 -->
+                <div id="sultan3" class="sultan-content space-y-6 hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Sultan Ke-7 (Wafat 1481 M)</span>
+                            <h4 class="serif-title text-2xl font-bold text-slate-100">Sultan Muhammad Al-Fatih (Mehmed II)</h4>
+                        </div>
+                        <span class="inline-block bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold">
+                            "The Conqueror" (Sang Penakluk)
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Naik takhta pada usia 22 tahun dengan ambisi besar merealisasikan sabda Nabi Muhammad SAW: menaklukkan ibukota Romawi Timur, Konstantinopel, kota terkuat di dunia yang selama berabad-abad gagal ditembus pasukan muslim.
+                            </p>
+                            <div class="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-xl">
+                                <span class="text-xs text-emerald-400 font-bold block">💡 Analogi Kunci:</span>
+                                <p class="text-xs text-slate-300">
+                                    Dia adalah <strong>"Lead Developer"</strong> jenius yang meluncurkan aplikasi revolusioner setelah ratusan developer senior sebelumnya mengalami kegagalan teknis berulang kali.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 bg-slate-950/40 p-4 rounded-2xl border border-slate-800">
+                            <span class="text-xs text-amber-400 font-bold uppercase">Prestasi Krusial (Bahan Ujian):</span>
+                            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+                                <li>Menaklukkan Konstantinopel (29 Mei 1453), mengubah namanya menjadi Islambul (Istanbul).</li>
+                                <li>Membeli Katedral Hagia Sophia dengan dana pribadinya, menjadikannya masjid, lalu diwakafkan untuk umat.</li>
+                                <li>Mendirikan Istana Topkapi (pusat pemerintahan ikonik) di atas lahan seluas 700.000 meter persegi.</li>
+                                <li>Memperluas pengaruh geopolitik hingga terjalinnya hubungan diplomasi dengan Kerajaan Aceh (Nusantara).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sultan 4 -->
+                <div id="sultan4" class="sultan-content space-y-6 hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Sultan Ke-9 (Wafat 1520 M)</span>
+                            <h4 class="serif-title text-2xl font-bold text-slate-100">Sultan Salim I (The Grim)</h4>
+                        </div>
+                        <span class="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs px-3 py-1 rounded-full font-semibold">
+                            "Khadimul Haramain" (Pelayan Dua Kota Suci)
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Sultan berkarakter keras, disiplin tinggi, dan ahli taktik perang. Meski masa kekuasaannya relatif singkat, ia berhasil melipatgandakan wilayah kekaisaran dan menetapkan posisi kekhalifahan resmi bagi Utsmani.
+                            </p>
+                            <div class="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-xl">
+                                <span class="text-xs text-emerald-400 font-bold block">💡 Analogi Kunci:</span>
+                                <p class="text-xs text-slate-300">
+                                    Seperti seorang administrator sistem yang mendapatkan <strong>"Root Access/Kunci Utama"</strong> server pusat, memindahkan kendali mutlak ke genggaman kekaisaran Utsmani.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 bg-slate-950/40 p-4 rounded-2xl border border-slate-800">
+                            <span class="text-xs text-amber-400 font-bold uppercase">Prestasi Krusial (Bahan Ujian):</span>
+                            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+                                <li>Memenangkan Perang Raidania (1517 M) melawan Dinasti Mamluk di Mesir.</li>
+                                <li>Menerima kunci resmi Mekah-Madinah, memilih gelar rendah hati: "Pelayan 2 Kota Suci" (Khadimul Haramain) bukan "Penguasa".</li>
+                                <li>Penyatuan kekhalifahan Islam ke Turki Utsmani lewat upacara simbolis serah terima pedang & jubah Rasulullah.</li>
+                                <li>Menahan ancaman agresif Dinasti Safawi (Syi'ah) di Persia lewat pertempuran Chaldiran.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sultan 5 -->
+                <div id="sultan5" class="sultan-content space-y-6 hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Sultan Ke-10 (Wafat 1566 M)</span>
+                            <h4 class="serif-title text-2xl font-bold text-slate-100">Sultan Sulaiman Al-Qanuni</h4>
+                        </div>
+                        <span class="inline-block bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold">
+                            "Suleiman the Magnificent" (Zaman Keemasan)
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Membawa Daulah ke puncak absolut peradaban. Ia bukan saja memimpin ekspansi wilayah militer secara masif ke tiga benua, melainkan juga meletakkan landasan struktural hukum kekaisaran.
+                            </p>
+                            <div class="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-xl">
+                                <span class="text-xs text-emerald-400 font-bold block">💡 Analogi Kunci:</span>
+                                <p class="text-xs text-slate-300">
+                                    Bertindak sebagai <strong>"Senior Software Architect"</strong> yang menyusun kode hukum rapi terintegrasi (*Framework global*) yang dipakai konsisten tanpa cela selama 3 abad.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 bg-slate-950/40 p-4 rounded-2xl border border-slate-800">
+                            <span class="text-xs text-amber-400 font-bold uppercase">Prestasi Krusial (Bahan Ujian):</span>
+                            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+                                <li>Menyusun kitab hukum "Multaqal Abhur" (Konun Utsmani) yang menjadi rujukan regulasi bahkan di benua Eropa.</li>
+                                <li>Menjadikan Istanbul sebagai poros global untuk seni rupa, sastra, arsitektur, musik, dan filsafat.</li>
+                                <li>Membangun infrastruktur monumental: Masjid Agung Sulaiman, Masjid Agung Muhammad, dll.</li>
+                                <li>Mewajibkan syariat ketat (seperti sanksi denda & fisik bagi warga muslim yang abai salat fardhu).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. TRISULA MILITER (PASUKAN KHUSUS) -->
+        <section id="military" class="scroll-mt-24">
+            <div class="flex flex-col items-center text-center mb-12">
+                <span class="text-xs text-amber-400 tracking-wider font-semibold uppercase">Pilar Pertahanan & Serangan</span>
+                <h3 class="serif-title text-3xl font-bold text-slate-100 mt-1">Sistem Trisula Militer Utsmani</h3>
+                <p class="text-slate-400 max-w-lg text-sm mt-2">Ini rahasia mengapa kekuatan tempur Utsmani sulit dibendung kerajaan Eropa. Terdiri atas 3 sayap utama.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Janissary -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-emerald-800/60 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-emerald-500/15 text-emerald-400 font-semibold text-xs px-2.5 py-1 rounded-full border border-emerald-500/20">Elite Infantry</span>
+                            <span class="text-2xl">🛡️</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-100 mb-2">Pasukan Janissary (Yanisari)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Direkrut dari anak-anak non-muslim daerah jajahan (saat berusia 12 tahun), lalu dibimbing masuk Islam dan dilatih fisik serta spiritualnya dengan disiplin asketis sangat keras. 
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 bg-emerald-950/20 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="text-[11px] text-amber-400 font-bold uppercase tracking-wider block">Catatan Ujian:</span>
+                        <p class="text-[11px] text-slate-300 leading-relaxed mt-1">
+                            Sangat loyal, berafiliasi erat dengan <strong>Tarekat Bektashi</strong>, dan merupakan mesin tempur infanteri terkuat kala itu.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sipahi -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-800/60 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-amber-500/15 text-amber-400 font-semibold text-xs px-2.5 py-1 rounded-full border border-amber-500/20">Cavalry</span>
+                            <span class="text-2xl">🏇</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-100 mb-2">Pasukan Sipahi (Kavaleri)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Pasukan penunggang kuda taktis reguler milik negara yang mendapatkan kompensasi atau sistem gaji bulanan tetap secara formal dari kas Daulah.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 bg-amber-950/20 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="text-[11px] text-amber-400 font-bold uppercase tracking-wider block">Catatan Ujian:</span>
+                        <p class="text-[11px] text-slate-300 leading-relaxed mt-1">
+                            Berfungsi mengamankan garis belakang pertempuran dan melakukan gempuran gerak cepat sayap kanan & kiri musuh.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Azab -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-slate-700/60 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-slate-800 text-slate-400 font-semibold text-xs px-2.5 py-1 rounded-full border border-slate-700">Auxiliary</span>
+                            <span class="text-2xl">🏹</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-100 mb-2">Pasukan Azab (Hazab)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Pasukan infanteri cadangan non-reguler yang digaji bukan berdasarkan APBN kas negara, melainkan berdasarkan porsi hasil rampasan perang (ghanimah).
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 bg-slate-950/60 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="text-[11px] text-amber-400 font-bold uppercase tracking-wider block">Catatan Ujian:</span>
+                        <p class="text-[11px] text-slate-300 leading-relaxed mt-1">
+                            Sering dikerahkan sebagai garda depan penyerangan awal guna memecah konsentrasi formasi pertahanan musuh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SOSIAL, KEAGAMAAN, DAN SENI ARSITEKTUR -->
+        <section class="scroll-mt-24">
+            <div class="flex flex-col items-center text-center mb-12">
+                <span class="text-xs text-emerald-400 tracking-wider font-semibold uppercase">Karakteristik Peradaban</span>
+                <h3 class="serif-title text-3xl font-bold text-slate-100 mt-1">Agama, Intelektualitas & Seni</h3>
+                <p class="text-slate-400 max-w-lg text-sm mt-2">Pahami keunikan budaya Turki Utsmani untuk menjawab soal-soal karakteristik peradaban.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Left: Budaya & Keagamaan -->
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl space-y-6">
+                    <h4 class="serif-title text-xl font-bold text-amber-400 border-b border-slate-800 pb-2">Kondisi Sosial-Agama</h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold block">Madzhab Teologi Resmi</span>
+                            <p class="text-sm text-slate-200 mt-1">
+                                Daulah Turki Utsmani sangat fanatik terhadap aliran <strong>Asy'ariyah</strong> (Sunni). Kajian teologi di luar itu sangat ditekan demi stabilitas ideologis negara.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold block">Dunia Tarekat (Sufisme)</span>
+                            <p class="text-sm text-slate-200 mt-1">
+                                Saat kajian keilmuan fardhu kifayah menyusut, tarekat diberi ruang lebar. Dua tarekat dominan:
+                            </p>
+                            <ul class="text-xs text-slate-300 space-y-1 list-disc pl-4 mt-2">
+                                <li><strong>Tarekat Bektashi</strong>: Sangat mendominasi kalangan militer (terutama Janissary).</li>
+                                <li><strong>Tarekat Maulawi</strong>: Sangat didukung kalangan pejabat dan penguasa dinasti.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Mengapa Ilmu Sains Kurang Menonjol? -->
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-3xl space-y-6">
+                    <h4 class="serif-title text-xl font-bold text-emerald-400 border-b border-slate-800 pb-2">Fakta Sains & Arsitektur</h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold block">Mengapa Sains Kurang Berkembang?</span>
+                            <p class="text-sm text-slate-200 mt-1">
+                                Berbeda dengan Abbasiyah yang melahirkan Ibnu Sina atau Al-Khwarizmi, Turki Utsmani dikenal berdarah militer murni. Energi mereka habis di medan perang & ekspansi wilayah, sehingga inovasi murni sains tertinggal.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold block">Kemajuan Bidang Arsitektur & Kaligrafi</span>
+                            <p class="text-sm text-slate-200 mt-1">
+                                Meski sains lesu, mereka memuncak di bidang arsitektur Islam. Terkenal dengan bangunan masjid berdesain kubah bertingkat megah dan dekorasi kaligrafi berkelas tinggi (seperti kaligrafi penutup lukisan Kristen di Hagia Sophia).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SIMULASI KUIS CEPAT UJIAN -->
+        <section id="quiz" class="scroll-mt-24 bg-gradient-to-b from-slate-900 to-slate-950 border border-emerald-900/40 p-6 sm:p-10 rounded-3xl">
+            <div class="flex flex-col items-center text-center mb-8">
+                <span class="text-xs bg-emerald-500/15 text-emerald-400 font-semibold px-3 py-1 rounded-full border border-emerald-500/25 uppercase">Wajib Dicoba Sebelum Tidur!</span>
+                <h3 class="serif-title text-3xl font-bold text-slate-100 mt-2">Simulasi Ujian Daulah Utsmani</h3>
+                <p class="text-slate-400 max-w-md text-xs mt-1">Uji ingatan Anda dengan 5 soal standar ujian nasional/sekolah di bawah ini secara instan!</p>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-wrapper" class="max-w-2xl mx-auto space-y-8">
+                
+                <!-- Question 1 -->
+                <div class="quiz-step" data-step="1">
+                    <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Pertanyaan 1 dari 5</span>
+                    <h4 class="text-base font-semibold text-slate-100 leading-relaxed mb-4">
+                        Mengapa Sultan Muhammad I dijuluki sebagai "The Second Founder" (Pendiri Daulah Turki Utsmani Kedua)?
+                    </h4>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q1" value="A" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">A. Karena ia berhasil menaklukkan konstantinopel pertama kali</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q1" value="B" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">B. Karena ia merestorasi kembali kedaulatan kekaisaran setelah hancur akibat invasi Mongol & perang saudara</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q1" value="C" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">C. Karena ia memindahkan ibukota ke Mesir secara permanen</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-step hidden" data-step="2">
+                    <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Pertanyaan 2 dari 5</span>
+                    <h4 class="text-base font-semibold text-slate-100 leading-relaxed mb-4">
+                        Tindakan apa yang dilakukan oleh Sultan Muhammad al-Fatih pasca memasuki Gereja Katedral Hagia Sophia?
+                    </h4>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q2" value="A" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">A. Menghancurkannya total hingga rata dengan tanah</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q2" value="B" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">B. Mengambil alih paksa secara militer tanpa kompensasi</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q2" value="C" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">C. Membeli bangunan katedral dengan uang pribadi, merapikan interiornya, lalu mewakafkannya sebagai masjid</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-step hidden" data-step="3">
+                    <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Pertanyaan 3 dari 5</span>
+                    <h4 class="text-base font-semibold text-slate-100 leading-relaxed mb-4">
+                        Gelar "Khadimul Haramain" (Pelayan Dua Kota Suci) pertama kali diadopsi oleh Sultan siapa setelah penaklukan dinasti Mamluk Mesir?
+                    </h4>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q3" value="A" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">A. Sultan Salim I</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q3" value="B" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">B. Sultan Sulaiman Al-Qanuni</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q3" value="C" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">C. Sultan Murad II</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="quiz-step hidden" data-step="4">
+                    <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Pertanyaan 4 dari 5</span>
+                    <h4 class="text-base font-semibold text-slate-100 leading-relaxed mb-4">
+                        Mengapa dunia kajian murni ilmu pengetahuan alam/sains cenderung kurang menonjol di era Daulah Turki Utsmani?
+                    </h4>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q4" value="A" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">A. Karena sains dilarang keras secara mutlak oleh sultan</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q4" value="B" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">B. Karena daulah berkarakter "militer murni" yang memprioritaskan ekspansi pertahanan dan administrasi negara</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q4" value="C" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">C. Karena kas negara habis untuk pembangunan jalan raya saja</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="quiz-step hidden" data-step="5">
+                    <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Pertanyaan 5 dari 5</span>
+                    <h4 class="text-base font-semibold text-slate-100 leading-relaxed mb-4">
+                        Tarekat sufi manakah yang memiliki keterikatan spiritual dan pengaruh paling besar di kalangan korps militer elit Janissary?
+                    </h4>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q5" value="A" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">A. Tarekat Maulawi</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q5" value="B" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">B. Tarekat Bektashi</span>
+                        </label>
+                        <label class="quiz-option flex items-center gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-800 cursor-pointer transition">
+                            <input type="radio" name="q5" value="C" class="form-radio text-emerald-500">
+                            <span class="text-sm text-slate-300">C. Tarekat Naqsyabandiyah</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex justify-between items-center pt-4 border-t border-slate-800">
+                    <button id="prev-btn" onclick="prevQuestion()" class="text-xs bg-slate-900 hover:bg-slate-800 px-4 py-2 rounded-full border border-slate-800 font-semibold transition opacity-50 cursor-not-allowed" disabled>
+                        Sebelumnya
+                    </button>
+                    <button id="next-btn" onclick="nextQuestion()" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold px-6 py-2 rounded-full transition">
+                        Berikutnya
+                    </button>
+                </div>
+
+                <!-- Result Container -->
+                <div id="quiz-result" class="hidden text-center space-y-4 bg-emerald-950/20 border border-emerald-500/30 p-6 rounded-2xl">
+                    <span class="text-3xl">🎉</span>
+                    <h4 class="text-xl font-bold text-emerald-400">Hasil Evaluasi Belajar</h4>
+                    <p class="text-sm text-slate-300">
+                        Skor Anda: <span id="quiz-score" class="font-bold text-amber-400">0</span> dari 5 Pertanyaan.
+                    </p>
+                    <p id="quiz-feedback" class="text-xs text-slate-400 leading-relaxed max-w-md mx-auto"></p>
+                    <button onclick="resetQuiz()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2 rounded-full font-semibold transition mt-2">
+                        Ulangi Kuis
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactive JS Logic -->
+    <script>
+        // Scroll helper
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Switch Sultan Tabs
+        function switchSultanTab(tabId) {
+            // Hide all tabs content
+            const contents = document.querySelectorAll('.sultan-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Show active tab content
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Reset tab button styles
+            const buttons = document.querySelectorAll('.sultan-tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-emerald-950', 'text-emerald-400', 'border-emerald-900/30');
+                btn.classList.add('bg-slate-900', 'text-slate-400', 'border-slate-800');
+            });
+
+            // Set active button style
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('bg-slate-900', 'text-slate-400', 'border-slate-800');
+            activeBtn.classList.add('bg-emerald-950', 'text-emerald-400', 'border-emerald-900/30');
+        }
+
+        // Quiz State Management
+        let currentStep = 1;
+        const totalSteps = 5;
+        const correctAnswers = {
+            q1: "B",
+            q2: "C",
+            q3: "A",
+            q4: "B",
+            q5: "B"
+        };
+
+        function updateQuizUI() {
+            // Hide all steps
+            const steps = document.querySelectorAll('.quiz-step');
+            steps.forEach(step => {
+                step.classList.add('hidden');
+            });
+
+            // Show active step if we are within bounds
+            if (currentStep <= totalSteps) {
+                const activeStep = document.querySelector(`.quiz-step[data-step="${currentStep}"]`);
+                if (activeStep) activeStep.classList.remove('hidden');
+                
+                // Update navigation buttons
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+
+                if (currentStep === 1) {
+                    prevBtn.disabled = true;
+                    prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    prevBtn.disabled = false;
+                    prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+
+                if (currentStep === totalSteps) {
+                    nextBtn.innerText = "Selesai & Hitung";
+                } else {
+                    nextBtn.innerText = "Berikutnya";
+                }
+            }
+        }
+
+        function nextQuestion() {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateQuizUI();
+            } else {
+                // Submit and calculate results
+                calculateResult();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateQuizUI();
+            }
+        }
+
+        function calculateResult() {
+            let score = 0;
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked')?.value || null,
+                q2: document.querySelector('input[name="q2"]:checked')?.value || null,
+                q3: document.querySelector('input[name="q3"]:checked')?.value || null,
+                q4: document.querySelector('input[name="q4"]:checked')?.value || null,
+                q5: document.querySelector('input[name="q5"]:checked')?.value || null,
+            };
+
+            for (let key in correctAnswers) {
+                if (answers[key] === correctAnswers[key]) {
+                    score++;
+                }
+            }
+
+            // Hide questions and navigation
+            const steps = document.querySelectorAll('.quiz-step');
+            steps.forEach(step => step.classList.add('hidden'));
+            document.getElementById('prev-btn').classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+
+            // Show and populate results
+            const resultBox = document.getElementById('quiz-result');
+            const scoreLabel = document.getElementById('quiz-score');
+            const feedbackText = document.getElementById('quiz-feedback');
+
+            resultBox.classList.remove('hidden');
+            scoreLabel.innerText = score;
+
+            if (score === 5) {
+                feedbackText.innerText = "Sempurna! Kamu sudah menguasai seluruh aspek krusial Daulah Turki Utsmani. Ujian besok dijamin aman dan siap mendapat nilai maksimal!";
+            } else if (score >= 3) {
+                feedbackText.innerText = "Bagus sekali! Pemahaman dasar kamu sudah cukup kuat. Silakan review kembali bagian 'Trisula Militer' atau 'Sultan Utama' untuk memastikan nilai sempurna besok.";
+            } else {
+                feedbackText.innerText = "Sepertinya kamu perlu membaca ulang catatan di atas sekali lagi. Luangkan waktu 5 menit untuk memahami analogi-analoginya sebelum mencoba kuis ini lagi.";
+            }
+        }
+
+        function resetQuiz() {
+            currentStep = 1;
+            
+            // Uncheck all radio buttons
+            const radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => radio.checked = false);
+
+            // Hide result box, show navigation
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('prev-btn').classList.remove('hidden');
+            document.getElementById('next-btn').classList.remove('hidden');
+
+            updateQuizUI();
+        }
+    </script>
+</body>
+</html>
